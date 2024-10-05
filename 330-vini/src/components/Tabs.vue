@@ -24,7 +24,7 @@ let tab = ref(0);
 
       >
 
-        <img src="../media/Petruzzelli.jpg" alt="logo" width="100">
+        <img class="imglogo" src="../media/logo.jpg" alt="logo" width="100">
 
       </div>
 
@@ -53,6 +53,42 @@ let tab = ref(0);
 
       </button>
 
+      <button
+
+      @click="tab=3"
+
+      :class="{'btn-neutral' : tab === 3}"
+      
+      class="btn btn-xs sm:btn+-sm md:btn-md lg:btn-lg ">
+
+        PROPRIETARIO
+
+      </button>
+
+      <button
+
+      @click="tab=4"
+
+      :class="{'btn-neutral' : tab === 4}"
+      
+      class="btn btn-xs sm:btn+-sm md:btn-md lg:btn-lg ">
+
+        GALLERIA
+
+      </button>
+
+      <button
+
+      @click="tab=5"
+
+      :class="{'btn-neutral' : tab === 5}"
+      
+      class="btn btn-xs sm:btn+-sm md:btn-md lg:btn-lg ">
+
+        EVENTI
+
+      </button>
+
 
     </div>
 
@@ -61,15 +97,27 @@ let tab = ref(0);
     <div>
 
       <div v-if="tab === 0" class="py-10 px-6">
-        <img src="../media/Petruzzelli.jpg" alt="">
+        <img src="../media/" alt="">
       </div>
 
       <div v-if="tab === 1" class="py-10 px-6">
-        <img src="../media/Petruzzelli.jpg" alt="">
+        <img src="../media/" alt="">
       </div>
 
       <div v-if="tab === 2"  class="py-10 px-6">
-        <h1>contenuto 2</h1>
+        <h1>contenuto 2 PRODOTTI</h1>
+      </div>
+
+      <div v-if="tab === 3"  class="py-10 px-6">
+        <h1>contenuto 3 proprietario</h1>
+      </div>
+
+      <div v-if="tab === 4"  class="py-10 px-6">
+        <h1>contenuto 4 galleria</h1>
+      </div>
+
+      <div v-if="tab === 5"  class="py-10 px-6">
+        <h1>contenuto 6 eventi</h1>
       </div>
 
     </div>
@@ -84,3 +132,20 @@ let tab = ref(0);
 
 
 </template>
+
+<style>
+
+
+
+.imglogo {
+
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+</style>
