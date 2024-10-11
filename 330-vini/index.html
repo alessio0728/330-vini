@@ -18,13 +18,22 @@
      }
 
      @media (max-width: 760px) {
-    html {
-        background-image: url(../330-vini/src/media/vinosd.jpg); 
-        
-        background-size: cover;
+  body {
+    background-image: url(../330-vini/src/media/vinosd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Assicura che l'immagine rimanga fissa durante lo scorrimento */
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    height: 100vh; /* Assicura che l'elemento body copra l'intera altezza dello schermo */
+  }
 
-        
-    }
+  html {
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    height: 100%; /* Assicura che l'elemento html copra l'intera altezza dello schermo */
+  }
 }
 
   </style>
