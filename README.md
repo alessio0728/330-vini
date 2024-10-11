@@ -15,5 +15,9 @@ Shift+option+è
 
 ## INSTALAZIONE
 
+## VISUALIZZARE IL PROGETTO
+
+npm run dev
+
 
 
