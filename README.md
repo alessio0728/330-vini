@@ -17,7 +17,9 @@ Shift+option+è
 
 ## VISUALIZZARE IL PROGETTO
 
-npm run dev
+npm run dev avvia live 
+
+Control + C blocca la live
 
 
 

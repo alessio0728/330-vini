@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import Home from './Home.vue';
 
 let tab = ref(0);
 let isDropdownOpen = ref(false);
@@ -94,10 +95,15 @@ const toggleDropdown = () => {
     <!-- Contenuto -->
     <div>
       <div v-if="tab === 0" class="py-10 px-6">
-        <img src="../media/" alt="">
+
+        <Home />
+
       </div>
+
       <div v-if="tab === 1" class="py-10 px-6">
-        <img src="../media/" alt="">
+
+        <Home />
+
       </div>
       <div v-if="tab === 2" class="py-10 px-6">
         <h1>contenuto 2 PRODOTTI</h1>
