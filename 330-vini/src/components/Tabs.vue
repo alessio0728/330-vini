@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import Home from './Home.vue';
+import Event from './Event.vue';
 
 let tab = ref(0);
 let isDropdownOpen = ref(false);
@@ -115,7 +116,9 @@ const toggleDropdown = () => {
         <h1>contenuto 4 galleria</h1>
       </div>
       <div v-if="tab === 5" class="py-10 px-6">
-        <h1>contenuto 6 eventi</h1>
+
+        <Event/>
+
       </div>
     </div>
   </div>
