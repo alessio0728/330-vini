@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import Home from './Home.vue';
 import Event from './Event.vue';
 import Boss from './Boss.vue';
+import Products from './Products.vue';
 
 let tab = ref(0);
 let isDropdownOpen = ref(false);
@@ -108,7 +109,9 @@ const toggleDropdown = () => {
 
       </div>
       <div v-if="tab === 2" class="py-10 px-6">
-        <h1>contenuto 2 PRODOTTI</h1>
+
+        <Products />
+
       </div>
       <div v-if="tab === 3" class="py-10 px-6">
 
