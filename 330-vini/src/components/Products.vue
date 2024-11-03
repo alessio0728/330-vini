@@ -3,68 +3,76 @@
  
 <div class="book-container">
     <div class="book">
-        <p>DIRADA' | Elegante e piacevolmente morbido, è la vite nel suo equilibrio più armonioso, alleggerita dai grappoli in eccesso per esaltare quelli scelti</p>
+        <p>VINO 1 <br> 10€</p>
+        
         <div class="cover">
-            <img src="../media/vino 1.jpg" alt="">
+            <img src="../media/vino 1.jpg" alt="vino">
         </div>
     </div>
 
     <div class="book">
-        <img src="../media/vino 2.jpg" alt="">
+        <p>VINO 1 <br> 10€</p>
+        
         <div class="cover">
-            <p>DIRADA' | Elegante e piacevolmente morbido, è la vite nel suo equilibrio più armonioso, alleggerita dai grappoli in eccesso per esaltare quelli scelti</p>
+            <img src="../media/vino 2.jpg" alt="vino">
         </div>
     </div>
 
     <div class="book">
-        <p>Hello</p>
+        <p>VINO 1 <br> 10€</p>
+        
         <div class="cover">
-            <p>Hover Me</p>
-        </div>
-    </div>
-
-    <!-- Aggiungi altri div .book come necessario -->
-
-    <div class="book">
-        <p>Hello</p>
-        <div class="cover">
-            <p>Hover Me</p>
+            <img src="../media/vino 3.jpg" alt="vino">
         </div>
     </div>
 
     <!-- Aggiungi altri div .book come necessario -->
 
     <div class="book">
-        <p>Hello</p>
+        <p>VINO 1 <br> 10€</p>
+        
         <div class="cover">
-            <p>Hover Me</p>
+            <img src="../media/vino 4.jpg" alt="vino">
         </div>
     </div>
 
     <!-- Aggiungi altri div .book come necessario -->
 
     <div class="book">
-        <p>Hello</p>
+        <p>VINO 1 <br> 10€</p>
+        
         <div class="cover">
-            <p>Hover Me</p>
+            <img src="../media/vino 5.jpg" alt="vino">
         </div>
     </div>
 
     <!-- Aggiungi altri div .book come necessario -->
 
     <div class="book">
-        <p>Hello</p>
+        <p>VINO 1 <br> 10€</p>
+        
         <div class="cover">
-            <p>Hover Me</p>
+            <img src="../media/vino 6.jpg" alt="vino">
         </div>
     </div>
 
     <!-- Aggiungi altri div .book come necessario -->
 
     <div class="book">
-        <p>Hello</p>
+        <p>VINO 1 <br> 10€</p>
+        
         <div class="cover">
-            <p>Hover Me</p>
+            <img src="../media/vino 7.jpg" alt="vino">
+        </div>
+    </div>
+
+    <!-- Aggiungi altri div .book come necessario -->
+
+    <div class="book">
+        <p>VINO 1 <br> 10€</p>
+        
+        <div class="cover">
+            <img src="../media/vino 8.jpg" alt="vino">
         </div>
     </div>
 
@@ -77,18 +85,28 @@
 
 <style scoped>
 
+img{
+    border-radius: 10px; 
+    height: 100%;
+
+}
+
 .book-container {
             display: flex;
             flex-wrap: wrap; /* Permette ai div di andare a capo se non ci sono abbastanza spazi */
             gap: 20px; /* Spazio tra i div */
             justify-content: center;
+            overflow-y: auto; /* Scroll verticale quando necessario */
+            max-height: 100vh; 
         }
         
         @media (max-width: 768px) {
-            .book {
-                flex: 1 1 calc(50% - 20px); /* 2 items per row on medium screens */
-            }
-        }
+    .book-container {
+        flex-wrap: wrap; /* Mantieni il wrapping su schermi medi */
+        overflow-y: auto; /* Scroll verticale su schermi medi */
+        max-height: 70vh; /* Limite di altezza su schermi medi */
+    }
+}
         @media (max-width: 480px) {
             .book {
                 flex: 1 1 100%; /* 1 item per row on small screens */
