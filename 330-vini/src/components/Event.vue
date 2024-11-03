@@ -52,7 +52,7 @@
     },
     methods: {
       startCountdown() {
-        const targetDate = new Date('2024-10-31T20:30:00Z'); // Mercoledì 31 Ottobre 2024, ore 20:30 UTC
+        const targetDate = new Date('2024-11-08T20:30:00Z'); // Mercoledì 31 Ottobre 2024, ore 20:30 UTC
         this.countdownInterval = setInterval(() => {
           const now = new Date();
           const diff = targetDate - now;
@@ -63,7 +63,7 @@
             this.hours = 0;
             this.minutes = 0;
             this.seconds = 0;
-            alert('Countdown finished!');
+            alert('Evento finito ci vediamo alla prossima con nuovi vini!');
             return;
           }
   
