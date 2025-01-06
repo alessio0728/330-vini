@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vue-cli-service serve",
+  "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
     "preview": "vite preview"
   },
